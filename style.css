@@ -1,0 +1,1507 @@
+/* ==========================================================
+                HAPPY 6 MONTHS ❤️
+              PREMIUM WEBSITE CSS
+                    PART - 1
+========================================================== */
+
+/* Google Font */
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&family=Great+Vibes&display=swap');
+
+/* RESET */
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    scroll-behavior:smooth;
+}
+
+body{
+
+    font-family:'Poppins',sans-serif;
+
+    background:#090909;
+
+    color:#fff;
+
+    overflow-x:hidden;
+
+}
+
+
+/* Scrollbar */
+
+::-webkit-scrollbar{
+
+    width:8px;
+
+}
+
+::-webkit-scrollbar-thumb{
+
+    background:#ff4d88;
+
+    border-radius:20px;
+
+}
+
+::-webkit-scrollbar-track{
+
+    background:#111;
+
+}
+
+
+/* ===================================================
+                    BACKGROUND
+=================================================== */
+
+.background{
+
+    position:fixed;
+
+    inset:0;
+
+    z-index:-5;
+
+    overflow:hidden;
+
+    background:
+    radial-gradient(circle at top left,#ff2d75 0%,transparent 40%),
+    radial-gradient(circle at bottom right,#6c63ff 0%,transparent 45%),
+    #090909;
+
+}
+
+
+/* Animated Blobs */
+
+.gradient-circle{
+
+    position:absolute;
+
+    width:450px;
+
+    height:450px;
+
+    border-radius:50%;
+
+    filter:blur(140px);
+
+    opacity:.35;
+
+}
+
+.gradient-circle.one{
+
+    background:#ff2d75;
+
+    top:-180px;
+
+    left:-120px;
+
+    animation:blobOne 10s infinite alternate;
+
+}
+
+.gradient-circle.two{
+
+    background:#6c63ff;
+
+    bottom:-180px;
+
+    right:-100px;
+
+    animation:blobTwo 10s infinite alternate;
+
+}
+
+
+@keyframes blobOne{
+
+0%{
+
+transform:translate(0,0);
+
+}
+
+100%{
+
+transform:translate(120px,90px);
+
+}
+
+}
+
+
+@keyframes blobTwo{
+
+0%{
+
+transform:translate(0,0);
+
+}
+
+100%{
+
+transform:translate(-140px,-100px);
+
+}
+
+}
+
+
+/* ===================================================
+                    LOADER
+=================================================== */
+
+#loader{
+
+position:fixed;
+
+top:0;
+
+left:0;
+
+width:100%;
+
+height:100vh;
+
+background:#000;
+
+display:flex;
+
+justify-content:center;
+
+align-items:center;
+
+flex-direction:column;
+
+z-index:9999;
+
+transition:1s;
+
+}
+
+
+.loader-heart{
+
+font-size:70px;
+
+animation:pulse 1.5s infinite;
+
+}
+
+
+#loader h1{
+
+margin-top:15px;
+
+font-size:42px;
+
+font-weight:700;
+
+}
+
+
+#loader p{
+
+margin-top:12px;
+
+color:#bbb;
+
+font-size:18px;
+
+}
+
+
+@keyframes pulse{
+
+0%{
+
+transform:scale(1);
+
+}
+
+50%{
+
+transform:scale(1.15);
+
+}
+
+100%{
+
+transform:scale(1);
+
+}
+
+}
+
+
+/* ===================================================
+                    HERO
+=================================================== */
+
+.hero{
+
+min-height:100vh;
+
+display:flex;
+
+justify-content:center;
+
+align-items:center;
+
+padding:30px;
+
+text-align:center;
+
+}
+
+
+.glass-card{
+
+width:100%;
+
+max-width:700px;
+
+padding:60px 40px;
+
+border-radius:35px;
+
+background:rgba(255,255,255,.08);
+
+backdrop-filter:blur(25px);
+
+border:1px solid rgba(255,255,255,.12);
+
+box-shadow:0 20px 60px rgba(0,0,0,.35);
+
+}
+
+
+.tag{
+
+letter-spacing:4px;
+
+font-size:14px;
+
+color:#ffd6e5;
+
+margin-bottom:25px;
+
+}
+
+
+.name{
+
+font-size:78px;
+
+font-weight:800;
+
+background:linear-gradient(90deg,#ff2d75,#ff9abf);
+
+background-clip: text;
+-webkit-background-clip: text;
+-webkit-text-fill-color: transparent;
+
+-webkit-text-fill-color:transparent;
+
+}
+
+
+.hero h2{
+
+margin:15px 0;
+
+font-size:35px;
+
+}
+
+
+.subtitle{
+
+margin-top:25px;
+
+font-size:20px;
+
+line-height:36px;
+
+color:#ddd;
+
+}
+
+
+.date-card{
+
+margin-top:35px;
+
+display:inline-flex;
+
+flex-direction:column;
+
+align-items:center;
+
+padding:18px 35px;
+
+border-radius:20px;
+
+background:rgba(255,255,255,.08);
+
+border:1px solid rgba(255,255,255,.12);
+
+}
+
+
+.date-card i{
+
+font-size:28px;
+
+margin-bottom:10px;
+
+color:#ff5d91;
+
+}
+
+
+.date-card span{
+
+font-size:15px;
+
+color:#ddd;
+
+}
+
+
+.date-card h3{
+
+margin-top:6px;
+
+font-size:22px;
+
+font-weight:600;
+
+}
+
+
+/* ===================================================
+                    BUTTON
+=================================================== */
+
+#startBtn{
+
+margin-top:40px;
+
+padding:18px 48px;
+
+font-size:18px;
+
+font-weight:600;
+
+border:none;
+
+outline:none;
+
+cursor:pointer;
+
+border-radius:60px;
+
+background:linear-gradient(90deg,#ff2d75,#ff6ba9);
+
+color:#fff;
+
+transition:.4s;
+
+box-shadow:0 12px 35px rgba(255,45,117,.35);
+
+}
+
+
+#startBtn:hover{
+
+transform:translateY(-6px) scale(1.05);
+
+box-shadow:0 18px 45px rgba(255,45,117,.45);
+
+}
+
+
+#startBtn i{
+
+margin-left:10px;
+
+}
+
+
+/* ===================================================
+                SCROLL INDICATOR
+=================================================== */
+
+.scroll-indicator{
+
+display:flex;
+
+flex-direction:column;
+
+align-items:center;
+
+padding-bottom:50px;
+
+animation:upDown 2s infinite;
+
+}
+
+
+.scroll-indicator span{
+
+font-size:15px;
+
+letter-spacing:2px;
+
+margin-bottom:10px;
+
+color:#ddd;
+
+}
+
+
+.scroll-indicator i{
+
+font-size:24px;
+
+color:#ff5d91;
+
+}
+
+
+@keyframes upDown{
+
+0%{
+
+transform:translateY(0);
+
+}
+
+50%{
+
+transform:translateY(10px);
+
+}
+
+100%{
+
+transform:translateY(0);
+
+}
+
+}
+/* ==========================================================
+                    QUOTE SECTION
+========================================================== */
+
+.quote-section{
+
+    padding:120px 8%;
+
+}
+
+.quote-card{
+
+    max-width:900px;
+
+    margin:auto;
+
+    text-align:center;
+
+    padding:60px 40px;
+
+    border-radius:30px;
+
+    background:rgba(255,255,255,.08);
+
+    backdrop-filter:blur(25px);
+
+    border:1px solid rgba(255,255,255,.12);
+
+    box-shadow:0 20px 50px rgba(0,0,0,.30);
+
+    transition:.4s;
+
+}
+
+.quote-card:hover{
+
+    transform:translateY(-8px);
+
+}
+
+.quote-card i{
+
+    font-size:55px;
+
+    color:#ff5d91;
+
+    margin-bottom:25px;
+
+}
+
+.quote-card h2{
+
+    font-size:36px;
+
+    line-height:58px;
+
+    font-weight:700;
+
+}
+
+.quote-card p{
+
+    margin-top:25px;
+
+    color:#ffb4cc;
+
+    font-size:20px;
+
+}
+
+
+
+/* ==========================================================
+                    SECTION TITLE
+========================================================== */
+
+.section-title{
+
+    text-align:center;
+
+    margin-bottom:60px;
+
+}
+
+.section-title h2{
+
+    font-size:48px;
+
+    font-weight:700;
+
+    background:linear-gradient(90deg,#ff4d88,#ffc1d6);
+
+    background-clip: text;
+-webkit-background-clip: text;
+-webkit-text-fill-color: transparent;
+
+    -webkit-text-fill-color:transparent;
+
+}
+
+.section-title p{
+
+    margin-top:18px;
+
+    color:#d8d8d8;
+
+    font-size:18px;
+
+}
+
+
+
+/* ==========================================================
+                COUNTER SECTION
+========================================================== */
+
+.counter-section{
+
+    padding:120px 8%;
+
+}
+
+.counter-grid{
+
+    display:grid;
+
+    grid-template-columns:repeat(4,1fr);
+
+    gap:25px;
+
+}
+
+.counter-card{
+
+    text-align:center;
+
+    padding:45px 20px;
+
+    border-radius:25px;
+
+    background:rgba(255,255,255,.08);
+
+    backdrop-filter:blur(25px);
+
+    border:1px solid rgba(255,255,255,.12);
+
+    transition:.35s;
+
+    box-shadow:0 15px 35px rgba(0,0,0,.25);
+
+}
+
+.counter-card:hover{
+
+    transform:translateY(-12px);
+
+    box-shadow:0 20px 45px rgba(255,77,136,.35);
+
+}
+
+.counter-card h1{
+
+    font-size:65px;
+
+    color:#ff4d88;
+
+}
+
+.counter-card span{
+
+    display:block;
+
+    margin-top:10px;
+
+    font-size:18px;
+
+    letter-spacing:2px;
+
+    color:#fff;
+
+}
+
+
+
+/* ==========================================================
+                    GALLERY
+========================================================== */
+
+.gallery-section{
+
+    padding:120px 8%;
+
+}
+
+.gallery{
+
+    display:grid;
+
+    grid-template-columns:repeat(3,1fr);
+
+    gap:25px;
+
+}
+
+.photo{
+
+    overflow:hidden;
+
+    border-radius:25px;
+
+    position:relative;
+
+    cursor:pointer;
+
+    box-shadow:0 20px 40px rgba(0,0,0,.35);
+
+}
+
+.photo img{
+
+    width:100%;
+
+    height:360px;
+
+    object-fit:cover;
+
+    transition:.6s;
+
+    display:block;
+
+}
+
+.photo:hover img{
+
+    transform:scale(1.12);
+
+}
+
+.photo::before{
+
+    content:"❤";
+
+    position:absolute;
+
+    top:50%;
+
+    left:50%;
+
+    transform:translate(-50%,-50%) scale(0);
+
+    font-size:60px;
+
+    color:#fff;
+
+    z-index:2;
+
+    transition:.4s;
+
+}
+
+.photo:hover::before{
+
+    transform:translate(-50%,-50%) scale(1);
+
+}
+
+.photo::after{
+
+    content:"";
+
+    position:absolute;
+
+    inset:0;
+
+    background:rgba(0,0,0,.35);
+
+    opacity:0;
+
+    transition:.4s;
+
+}
+
+.photo:hover::after{
+
+    opacity:1;
+
+}
+
+
+
+/* ==========================================================
+                IMAGE ANIMATION
+========================================================== */
+
+.photo{
+
+    animation:fadeUp 1s ease;
+
+}
+
+@keyframes fadeUp{
+
+    from{
+
+        opacity:0;
+
+        transform:translateY(40px);
+
+    }
+
+    to{
+
+        opacity:1;
+
+        transform:translateY(0);
+
+    }
+
+}
+/* ==========================================================
+                    LOVE LETTER SECTION
+========================================================== */
+
+.letter-section{
+
+    padding:120px 8%;
+
+}
+
+.letter-card{
+
+    max-width:900px;
+
+    margin:auto;
+
+    padding:60px;
+
+    border-radius:35px;
+
+    background:rgba(255,255,255,.08);
+
+    backdrop-filter:blur(25px);
+
+    border:1px solid rgba(255,255,255,.12);
+
+    box-shadow:0 20px 50px rgba(0,0,0,.30);
+
+    transition:.4s;
+
+}
+
+.letter-card:hover{
+
+    transform:translateY(-8px);
+
+}
+
+.letter-card h2{
+
+    font-size:42px;
+
+    text-align:center;
+
+    margin-bottom:35px;
+
+    background:linear-gradient(90deg,#ff4d88,#ffd4e5);
+
+    -webkit-background-clip:text;
+    background-clip:text;
+    -webkit-text-fill-color:transparent;
+
+}
+
+.letter-card p{
+
+    font-size:19px;
+
+    color:#f1f1f1;
+
+    line-height:40px;
+
+    text-align:justify;
+
+}
+
+.signature{
+
+    margin-top:40px;
+
+    text-align:right;
+
+}
+
+.signature h3{
+
+    font-family:'Great Vibes',cursive;
+
+    font-size:48px;
+
+    color:#ff8bb8;
+
+}
+
+.signature span{
+
+    display:block;
+
+    margin-top:8px;
+
+    color:#cccccc;
+
+}
+
+
+
+/* ==========================================================
+                    TIMELINE
+========================================================== */
+
+.timeline-section{
+
+    padding:120px 8%;
+
+}
+
+.timeline{
+
+    position:relative;
+
+    max-width:1000px;
+
+    margin:auto;
+
+}
+
+.timeline::before{
+
+    content:"";
+
+    position:absolute;
+
+    left:50%;
+
+    top:0;
+
+    width:4px;
+
+    height:100%;
+
+    background:linear-gradient(#ff4d88,#8a5cff);
+
+    transform:translateX(-50%);
+
+}
+
+.timeline-item{
+
+    width:50%;
+
+    padding:30px;
+
+    position:relative;
+
+}
+
+.timeline-item.left{
+
+    left:0;
+
+    text-align:right;
+
+}
+
+.timeline-item.right{
+
+    left:50%;
+
+}
+
+.timeline-content{
+
+    background:rgba(255,255,255,.08);
+
+    backdrop-filter:blur(20px);
+
+    border:1px solid rgba(255,255,255,.12);
+
+    border-radius:25px;
+
+    padding:30px;
+
+    box-shadow:0 15px 35px rgba(0,0,0,.30);
+
+    transition:.35s;
+
+}
+
+.timeline-content:hover{
+
+    transform:scale(1.03);
+
+}
+
+.timeline-content h3{
+
+    color:#ff6ca8;
+
+    margin-bottom:12px;
+
+    font-size:24px;
+
+}
+
+.timeline-content p{
+
+    color:#eeeeee;
+
+    line-height:30px;
+
+    font-size:17px;
+
+}
+
+.timeline-dot{
+
+    position:absolute;
+
+    width:22px;
+
+    height:22px;
+
+    background:#ff4d88;
+
+    border-radius:50%;
+
+    top:40px;
+
+    right:-11px;
+
+    border:4px solid #111;
+
+}
+
+.timeline-item.right .timeline-dot{
+
+    left:-11px;
+
+}
+
+
+
+/* ==========================================================
+                LOVE MEMORIES TITLE
+========================================================== */
+
+.memories-title{
+
+    text-align:center;
+
+    margin-top:120px;
+
+    margin-bottom:60px;
+
+}
+
+.memories-title h2{
+
+    font-size:48px;
+
+    background:linear-gradient(90deg,#ff5d91,#ffd2df);
+
+    -webkit-background-clip:text;
+    background-clip:text;
+    -webkit-text-fill-color:transparent;
+
+}
+
+.memories-title p{
+
+    margin-top:15px;
+
+    color:#cccccc;
+
+    font-size:18px;
+
+}
+/* ==========================================================
+                REASONS SECTION
+========================================================== */
+
+.reasons-section{
+
+    padding:120px 8%;
+
+}
+
+.reason-grid{
+
+    display:grid;
+
+    grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
+
+    gap:25px;
+
+    margin-top:60px;
+
+}
+
+.reason-card{
+
+    background:rgba(255,255,255,.08);
+
+    backdrop-filter:blur(25px);
+
+    border:1px solid rgba(255,255,255,.12);
+
+    border-radius:28px;
+
+    padding:35px 25px;
+
+    transition:.4s;
+
+    text-align:center;
+
+    box-shadow:0 15px 35px rgba(0,0,0,.25);
+
+}
+
+.reason-card:hover{
+
+    transform:translateY(-10px);
+
+    box-shadow:0 20px 45px rgba(255,77,136,.35);
+
+}
+
+.reason-card i{
+
+    font-size:45px;
+
+    color:#ff5d91;
+
+    margin-bottom:20px;
+
+}
+
+.reason-card h3{
+
+    font-size:24px;
+
+    margin-bottom:15px;
+
+}
+
+.reason-card p{
+
+    color:#dddddd;
+
+    line-height:28px;
+
+}
+
+
+
+/* ==========================================================
+                    PROMISE SECTION
+========================================================== */
+
+.promise-section{
+
+    padding:120px 8%;
+
+}
+
+.promise-card{
+
+    max-width:950px;
+
+    margin:auto;
+
+    padding:60px;
+
+    text-align:center;
+
+    border-radius:35px;
+
+    background:rgba(255,255,255,.08);
+
+    backdrop-filter:blur(25px);
+
+    border:1px solid rgba(255,255,255,.12);
+
+    box-shadow:0 20px 55px rgba(0,0,0,.30);
+
+}
+
+.promise-card h2{
+
+    font-size:48px;
+
+    margin-bottom:30px;
+
+    background:linear-gradient(90deg,#ff5d91,#ffd4e5);
+
+    -webkit-background-clip:text;
+
+    background-clip:text;
+
+    -webkit-text-fill-color:transparent;
+
+}
+
+.promise-card p{
+
+    font-size:19px;
+
+    line-height:38px;
+
+    color:#eeeeee;
+
+}
+
+.promise-heart{
+
+    font-size:70px;
+
+    color:#ff4d88;
+
+    margin-top:35px;
+
+    animation:heartbeat 1.5s infinite;
+
+}
+
+@keyframes heartbeat{
+
+0%{
+
+transform:scale(1);
+
+}
+
+50%{
+
+transform:scale(1.18);
+
+}
+
+100%{
+
+transform:scale(1);
+
+}
+
+}
+
+
+
+/* ==========================================================
+                FINAL MESSAGE
+========================================================== */
+
+.final-message{
+
+    padding:130px 8%;
+
+    text-align:center;
+
+}
+
+.final-message h1{
+
+    font-size:65px;
+
+    margin-bottom:25px;
+
+    background:linear-gradient(90deg,#ff5d91,#ffffff);
+
+    -webkit-background-clip:text;
+
+    background-clip:text;
+
+    -webkit-text-fill-color:transparent;
+
+}
+
+.final-message p{
+
+    font-size:22px;
+
+    line-height:40px;
+
+    color:#dddddd;
+
+    max-width:900px;
+
+    margin:auto;
+
+}
+
+
+
+/* ==========================================================
+                        FOOTER
+========================================================== */
+
+footer{
+
+    padding:50px 20px;
+
+    text-align:center;
+
+    border-top:1px solid rgba(255,255,255,.08);
+
+    color:#bbbbbb;
+
+    font-size:15px;
+
+}
+
+footer span{
+
+    color:#ff5d91;
+
+    font-weight:600;
+
+}
+
+
+
+/* ==========================================================
+                FLOATING HEARTS
+========================================================== */
+
+.hearts{
+
+    position:fixed;
+
+    inset:0;
+
+    pointer-events:none;
+
+    overflow:hidden;
+
+    z-index:-1;
+
+}
+
+.hearts span{
+
+    position:absolute;
+
+    bottom:-100px;
+
+    color:#ff5d91;
+
+    font-size:22px;
+
+    opacity:.6;
+
+    animation:floatHeart linear infinite;
+
+}
+
+@keyframes floatHeart{
+
+0%{
+
+transform:translateY(0) rotate(0deg);
+
+opacity:0;
+
+}
+
+20%{
+
+opacity:.8;
+
+}
+
+100%{
+
+transform:translateY(-120vh) rotate(360deg);
+
+opacity:0;
+
+}
+
+}
+
+
+
+/* ==========================================================
+                RESPONSIVE
+========================================================== */
+
+@media(max-width:992px){
+
+.hero .name{
+
+font-size:58px;
+
+}
+
+.timeline::before{
+
+left:20px;
+
+}
+
+.timeline-item{
+
+width:100%;
+
+padding-left:60px;
+
+padding-right:10px;
+
+left:0!important;
+
+text-align:left;
+
+}
+
+.timeline-dot{
+
+left:10px!important;
+
+right:auto;
+
+}
+
+.counter-grid{
+
+grid-template-columns:repeat(2,1fr);
+
+}
+
+.gallery{
+
+grid-template-columns:repeat(2,1fr);
+
+}
+
+}
+
+@media(max-width:768px){
+
+.counter-grid{
+
+grid-template-columns:1fr;
+
+}
+
+.gallery{
+
+grid-template-columns:1fr;
+
+}
+
+.quote-card h2{
+
+font-size:28px;
+
+line-height:45px;
+
+}
+
+.final-message h1{
+
+font-size:42px;
+
+}
+
+.promise-card{
+
+padding:35px 25px;
+
+}
+
+}
+
+@media(max-width:500px){
+
+.hero .name{
+
+font-size:42px;
+
+}
+
+.glass-card{
+
+padding:35px 20px;
+
+}
+
+#startBtn{
+
+width:100%;
+
+}
+
+.date-card{
+
+width:100%;
+
+}
+
+}
